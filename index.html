@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLEX</title>
+    <meta name="description" content="PWA - Calculadora flex (etanol ou gasolina?)">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">  
+</head>
+
+<body>
+    <div class="container">
+        <h1>Gasolina ou Etanol?</h1>
+        <h2>Preço do litro (R$):</h2>
+        <p>Gasolina<input type="number" id="gasolina" placeholder="0.00"></p>
+        <p>Etanol<input type="number" id="etanol" placeholder="0.00"></p>
+        <h2>Consumo médio do veículo (Km/Litro):</h2>
+        <p>Km/Litro Gasolina<input type="number" id="kmGasolina" placeholder="0.0"></p>
+        <p>Km/Litro Etanol<input type="number" id="kmEtanol" placeholder="0.0"></p>
+        <hr>
+        <table>
+            <tr>
+                <td id="left"><img src="img/flex.png" alt="medidor" id="status"></td>
+                <td><img src="img/calcflex.png" alt="flex" onclick="calcular()"></td>
+            </tr>
+        </table>
+    </div>
+        <script src="app.js"></script>
+</body>
+
+</html>
