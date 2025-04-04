@@ -1,0 +1,54 @@
+HealthCalc
+
+APP para quem deseja acompanhar de forma simples e direta diversas métricas de saúde.
+
+- IMC (Índice de massa corporal)
+- FCM (Frequência cardíaca máxima)
+- GET (Gasto energético total - calorias por dia)
+- Água (litros por dia)
+
+imc = peso / (altura * altura)
+fcm = 208 - (0.7 * idade)
+agua = (peso * 35) / 1000
+
+get = tmb * valor
+
+Valor:
+Sedentário: 1.2
+Exercício leve (1-2 dias/semana): 1.375
+Exercício moderado (3-5 dias/semana): 1.55
+Exercício pesado (6-7 dias/semana): 1.725
+Atleta (1 a 2 treinos/dia): 1.9
+
+tmb:
+Homens: tmb = 66 + (13.7 x peso em quilogramas) + (5 x altura em centímetros) – (6.8 x idade em anos)
+
+Mulheres: tmb = 655 + (9.6 X peso em quilogramas) + (1.8 X altura em centímetros) – (4.7 x idade em anos)
+
+Homens:
+get = (66 + (13.7 * peso) + (5 * altura) – (6.8 * idade)) * valor
+
+Mulheres:
+get = (655 + (9.6 * peso) + (1.8 * altura) – (4.7 * idade)) * valor
+
+// variáveis
+peso, altura, imc, idade, fcm, litros, get
+
+// entrada
+peso, altura, idade
+()Homem  ()Mulher
+Tabela de valores
+
+// processamento
+Fórmulas
+
+// saída
+imc junto com mostrador (indicativo do status do peso)
+Coração pulsando (fcm)
+get,litros
+
+
+
+
+
+
